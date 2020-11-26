@@ -3,7 +3,7 @@ open android app from url and intent
 
 ## Requirements
 
-###### Accept Application
+###### Sender Application
 
 1 - Add intent-filter to Manifest
 
@@ -30,7 +30,7 @@ open android app from url and intent
 
 ```
 
-###### Use Intent Application
+###### Reciever Application
 
 1 - add Permissions to Manifest
 
@@ -41,7 +41,7 @@ open android app from url and intent
 
 ## Usage
 
-###### Accept Application
+###### Sender Application
 
 1. default
 ```
@@ -55,7 +55,7 @@ public void onCreate(Bundle savedInstanceState) {
     Uri data = intent.getData();
 }
 ```
-2. if accept application is your app.
+2. if sender application is your app.
 
 ```
         Intent intent=getIntent();
@@ -77,7 +77,7 @@ public void onCreate(Bundle savedInstanceState) {
 ```
 
 
-###### Use Intent Application
+###### Reciever Application
 
 1. default
 
@@ -87,7 +87,7 @@ intent.setData(Uri.parse("https:\\www.example.com\sample"));
 startActivity(intent);
 ```
 
-2. if intent application is your app.
+2. if reciever application is your app.
 
 ```
 Intent intent = new Intent(Intent.ACTION_VIEW);
