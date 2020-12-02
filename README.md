@@ -3,9 +3,9 @@ open android app from url and intent
 
 ## Requirements
 
-###### Sender Application
+###### Reciever Application
 
-1 - Add intent-filter to Manifest
+1 - Add Activity intent-filter to Manifest
 
 ```
 <intent-filter
